@@ -1,0 +1,28 @@
+baseURL = "/"
+languageCode = "zh-cn"
+title = "馗安网络"
+theme = "focus-on-work"
+googleAnalytics = "G-H2CXZ7F4CB"
+enableRobotsTXT = true
+
+[params]
+	# favicon = "/images/fav.png"
+	home_title = "Hi, I'am Jinsn"
+	home_subtitle = "欢迎来到馗安网络站点"
+	home_description = "网络空间安全的钟馗，守护这片领土的安全。"
+	github = "https://github.com/kuisec"
+	bilibili = "https://space.bilibili.com/441038603"
+	blog = "https://blog.kuisec.net"
+	phone = "+86 110"
+	email = "Jinsnhs@yeah.net"
+	location = "Guizhou, China"
+	button = "去 联 系 我"
+	home = "主页"
+	work = "全部站点"
+	about = "关于我"
+	contact = "联系我"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
