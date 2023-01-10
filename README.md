@@ -31,18 +31,3 @@
 
 <div align="center" style="width: 100%; height: auto; background-image: url('https://w.wallhaven.cc/full/x6/wallhaven-x66lj3.jpg"></div>
 
-本次更新涉及以下信息：
-
-1.修复手机端底部分割线不会自动调整导致错位
-
-2.将底部文字居中显示，增加违和感
-
-3.修复 PC 端 Bar 条把文章主图遮住的问题
-
-4.修复手机端背景块大小跟主图大小不一致的问题
-
-5.全部站点页面增加图片透明支持选项、图片等比例缩放功能
-
-6.完善示例网站中的 test2.md 文档
-
-7.全部站点详情页增加 bilibili 视频按钮功能
