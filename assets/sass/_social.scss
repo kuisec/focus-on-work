@@ -72,24 +72,19 @@
   }
 }
 
-@media (max-width: 53em) {
-  .c-social {
-    margin-top: 4rem;
-  }
-  .c-social h3 {
-    padding-top: 3.2rem;
-    text-align: center;
+.c-social {
+  margin-top: 2rem;
+}
 
-    &:before {
-      left: calc(50% - 8rem);
-    }
-  }
+.c-social h3 {
+  padding-top: 3.2rem;
+  text-align: center;
+}
 
-  .c-social-links {
-    justify-content: center;
-  }
+.c-social-links {
+  justify-content: center;
+}
 
-  .c-social-links__item {
-    margin: 0 1.2rem 1.6rem;
-  }
+.c-social-links__item {
+  margin: 0 1.2rem 1.6rem;
 }
