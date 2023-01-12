@@ -13,37 +13,22 @@
             font-family: 'Poppins', sans-serif;
             -webkit-tap-highlight-color: transparent;
         }
-
         .img {
             margin: auto;
         }
-
         .col {
             flex-direction: column;
         }
-
-        .text {
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 22px;
-            line-height: 27px;
-            /* identical to box height */
-            text-align: center;
-            color: #504BA7;
-        }
-
         .logo {
             margin: 20px 0 0 25px;
             font-family: Montserrat;
             font-style: normal;
             font-weight: bold;
-            font-size: 22px;
-            line-height: 27px;
+            font-size: 1.5rem;
+            line-height: 1.7rem;
             /* identical to box height */
             color: #504BA7;
         }
-
         .section-one .vector {
             display: block;
             margin-left: auto;
@@ -51,22 +36,19 @@
             width: 500px;
             max-width: 100%;
         }
-
         .section-one .info {
             font-family: Montserrat;
             font-style: normal;
             font-weight: 600;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 1.2rem;
+            line-height: 1.4rem;
             /* or 150% */
             text-align: center;
             color: #292929;
         }
-
         span {
             font-style: bold;
         }
-
         /*Media Screen */
         @media only screen and (max-width: 770px) {
             body {
@@ -76,22 +58,19 @@
                 font-family: 'Poppins', sans-serif;
                 -webkit-tap-highlight-color: transparent;
             }
-
             .col {
                 flex-direction: column;
             }
-
             .logo {
                 margin: 20px 0 0 25px;
                 font-family: Montserrat;
                 font-style: normal;
                 font-weight: bold;
-                font-size: 22px;
-                line-height: 27px;
+                font-size: 1.3rem;
+                line-height: 1.5rem;
                 /* identical to box height */
                 color: #504BA7;
             }
-
             .section-one .vector {
                 display: block;
                 margin-left: auto;
@@ -99,13 +78,12 @@
                 width: 350px;
                 max-width: 100%;
             }
-
             .section-one .info {
                 font-family: Montserrat;
                 font-style: normal;
                 font-weight: 450;
-                font-size: 18px;
-                line-height: 22px;
+                font-size: 1.1rem;
+                line-height: 1.3rem;
                 /* or 150% */
                 text-align: center;
                 color: #292929;
@@ -125,22 +103,19 @@
                 font-family: 'Poppins', sans-serif;
                 -webkit-tap-highlight-color: transparent;
             }
-
             .col {
                 flex-direction: column;
             }
-
             .logo {
                 margin: 20px 0 0 25px;
                 font-family: Montserrat;
                 font-style: normal;
                 font-weight: bold;
-                font-size: 22px;
-                line-height: 27px;
+                font-size: 1.1rem;
+                line-height: 1.3rem;
                 /* identical to box height */
                 color: #504BA7;
             }
-
             .section-one .vector {
                 display: block;
                 margin-left: auto;
@@ -148,18 +123,16 @@
                 width: 200px;
                 max-width: 100%;
             }
-
             .section-one .info {
                 font-family: Montserrat;
                 font-style: normal;
                 font-weight: 300;
-                font-size: 10px;
-                line-height: 12px;
+                font-size: 1rem;
+                line-height: 1.2rem;
                 /* or 150% */
                 text-align: center;
                 color: #292929;
             }
-
             span {
                 font-style: bold;
             }
@@ -181,12 +154,12 @@
             <img src="/images/404.svg" alt="404" class="vector" />
         </div>
         <div class="info">
-            <p><span>卧槽！</span>
-                <br />
-                你要访问的页面怎么不见了？！
+            <p>
+                <div>卧槽！</div>
+                <div style="margin-top: 0.2rem;">你要访问的页面怎么不见了？！</div>
             </p>
         </div>
-        <div class="text" id="jump" onclick="backHistory()"></div>
+        <div class="logo" id="jump" style="text-align: center; margin: 0;" onclick="backHistory()"></div>
     </section>
     </div>
 
@@ -206,7 +179,7 @@
                 backHistory();
             }
             else {
-                div.innerHTML = '您将在' + timer + '秒钟之后返回上一页</br>（点击可立即返回）';
+                div.innerHTML = '您将在' + timer + '秒钟之后返回上一页<br/>（点击可立即返回）';
                 timer--;
             }
         }, 1000)

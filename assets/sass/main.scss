@@ -34,6 +34,7 @@
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
+    --description-font-size: 1rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
@@ -62,13 +63,18 @@
 /* Font size for large devices */
 @media screen and (min-width: 968px) {
     :root {
-        --big-font-size: 3rem;
+        --big-font-size: 2.5rem;
         --h1-font-size: 2.25rem;
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.2rem;
+        --description-font-size: 1.05rem;
         --normal-font-size: 1rem;
         --small-font-size: .875rem;
         --smaller-font-size: .813rem;
+    }
+    .home__img {
+        justify-self: right;
+        scale: 1.1;
     }
 }
 /*========== Variables Dark theme ==========*/
@@ -293,7 +299,8 @@ a{
     margin-bottom: var(--mb-0-75);
 }
 .home__description{
-    margin-bottom: var(--mb-2);
+    word-break: break-word;
+    font-size: var(--description-font-size);
 }
 .home__scroll{
     display: none;
@@ -328,6 +335,7 @@ a{
     border-radius: .5rem;
     font-weight: bold;
     border: none;
+    margin-top: var(--mb-2);
 }
 .button__border{
     background-color: var(--container-color);
@@ -507,7 +515,6 @@ a{
     .home__data{
         grid-column: initial;
     }
-
     .home__img{
         order: 1;
         justify-self: center;
@@ -590,30 +597,22 @@ a{
     .home__blob{
         width: 320px;
     }
-    .home__content{
-        grid-template-columns: max-content auto 1fr;
-    }
-    .home__blob-img{
-        transform: translateX(1rem);
-    }
     .home__social{
         transform: translateX(-6rem);
     }
     .home__subtitle {
         margin-top: var(--mb-1);
     }
-    .home__img {
-        justify-self: right;
-        scale: 1.25;
-    }
-    .home__content{
-        grid-template-columns: max-content max-content 1fr;
-    }
     .contact__form{
         width: 460px;
     }
 }
 @media screen and (min-width:1200px){
+    :root{
+        --big-font-size: 3rem;
+        --h3-font-size: 1.5rem;
+        --description-font-size: 1.15rem;
+    }
     .nav {
         max-width: 1024px;
     }
@@ -625,6 +624,10 @@ a{
     }
     .work-detail__container{
         max-width: 1200px;
+    }
+    .home__img {
+        justify-self: right;
+        scale: 1.25;
     }
 }
 

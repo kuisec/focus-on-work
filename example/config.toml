@@ -2,7 +2,9 @@ baseURL = "/"
 languageCode = "zh-cn"
 title = "站点名称"
 theme = "focus-on-work"
-googleAnalytics = "G-H2CXZ7F4CB"
+# 谷歌分析工具 分析码
+googleAnalytics = ""
+# 爬虫公约
 enableRobotsTXT = true
 
 [params]
@@ -10,6 +12,7 @@ enableRobotsTXT = true
 	home_title = "Hi, I'am XXX"
 	home_subtitle = "主标题"
 	home_description = "主页详细信息"
+	translate_home_description = "Home Details"
 	github = ""
 	bilibili = ""
 	blog = ""
@@ -21,6 +24,10 @@ enableRobotsTXT = true
 	work = "全部站点"
 	about = "关于我"
 	contact = "联系我"
+	# 选择表单对象，用户填的表单将传递给它（选项只能是 Netlify 或者 FormSpree）
+	forms_object = "Netlify"
+	# Formspree 的表单ID（选填，只有在上一个选项中填写 Formspree 才会有用）
+	form_id = ""
 
 [markup]
   [markup.goldmark]
