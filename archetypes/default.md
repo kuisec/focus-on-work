@@ -1,4 +1,10 @@
 ---
+# 文章创建时间
+first_date: {{ .Date | time.Format "2006-01-02 15:04:05" }}
+
+# 最后更新时间
+last_date: {{ .Date | time.Format "2006-01-02 15:04:05" }}
+
 # 草案开关，草案开启将不会转换此文章，true或者false，写完文章务必将其修改为false
 draft: true
 

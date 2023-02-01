@@ -1,4 +1,10 @@
 ---
+# 文章创建时间
+first_date: 2023-01-09 21:32:45
+
+# 最后更新时间
+last_date: 2023-02-01 22:22:52
+
 # 草案开关，草案开启将不会转换此文章，true或者false，写完文章务必将其修改为false
 draft: false
 
@@ -45,7 +51,7 @@ content_color: "transparent"
 <div align="center">
 <h1>优秀图片展示</h1>
 </div>
-<table id="imgTable">
+<table id="imgTable" width="100%">
     <tbody>
         <tr>
             <td>
@@ -104,7 +110,7 @@ content_color: "transparent"
         //给每一张图片设置顶部向下裁剪填充
         for(var i = 1; i <= 12; i++) {
             var div = document.getElementById("div" + i);
-            div.style.width = "width: 100%";
+            div.style.width = "width: 30%";
             div.style.height = "500px";
             div.style.backgroundPosition = "top";
             div.style.backgroundRepeat = "no-repeat";
@@ -120,6 +126,7 @@ content_color: "transparent"
     setStyle();
     displayDate();
 </script>
+
 
 完结！
 

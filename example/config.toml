@@ -9,6 +9,7 @@ enableRobotsTXT = true
 
 [params]
 	favicon = "/images/fav.svg"
+	author = "Jinsn"
 	home_title = "Hi, I'am XXX"
 	home_subtitle = "主标题"
 	home_description = "主页详细信息"
